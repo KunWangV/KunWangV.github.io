@@ -85,7 +85,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="login," />
 
 
 
@@ -101,17 +101,20 @@
 
 
 
-<meta name="description" content="Welcome t Hexo! 这是我的第一篇自己写的blog, 希望以后有更多的文章发表到上面来！ 快速开始创建一篇博文1$ hexo new &quot;My New Post&quot; 更多信息：Writing 运行 hexo 服务1$ hexo server 更多信息：Server 生成静态文件1$ hexo generate 更多信息: Generate 发布到GitHub服务器上1$ hexo depl">
+<meta name="description" content="微服务下登陆方式 参考 Email: david.borsos@opencredo.com  SSO 单点登陆角色：客户端、app服务器、认证服务器流程：  1、客户端请求 2、app服务器检查local用户状态，没有登陆，重定向到认证服务器 3、用户到认证服务器登陆，登陆成功返回token 4、用户使用token重新发起请求 5、app服务器向认证服务器校验token并请求user detail">
+<meta name="keywords" content="login">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo 快速开始">
-<meta property="og:url" content="https://kunwangv.github.io/2017/08/11/hello-kosam/index.html">
+<meta property="og:title" content="login">
+<meta property="og:url" content="https://kunwangv.github.io/2017/08/18/login/index.html">
 <meta property="og:site_name" content="Kun Wang">
-<meta property="og:description" content="Welcome t Hexo! 这是我的第一篇自己写的blog, 希望以后有更多的文章发表到上面来！ 快速开始创建一篇博文1$ hexo new &quot;My New Post&quot; 更多信息：Writing 运行 hexo 服务1$ hexo server 更多信息：Server 生成静态文件1$ hexo generate 更多信息: Generate 发布到GitHub服务器上1$ hexo depl">
+<meta property="og:description" content="微服务下登陆方式 参考 Email: david.borsos@opencredo.com  SSO 单点登陆角色：客户端、app服务器、认证服务器流程：  1、客户端请求 2、app服务器检查local用户状态，没有登陆，重定向到认证服务器 3、用户到认证服务器登陆，登陆成功返回token 4、用户使用token重新发起请求 5、app服务器向认证服务器校验token并请求user detail">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-08-11T04:51:59.702Z">
+<meta property="og:image" content="https://kunwangv.github.io/2017/08/18/login/images/login-methods.png">
+<meta property="og:updated_time" content="2017-08-18T06:36:28.763Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo 快速开始">
-<meta name="twitter:description" content="Welcome t Hexo! 这是我的第一篇自己写的blog, 希望以后有更多的文章发表到上面来！ 快速开始创建一篇博文1$ hexo new &quot;My New Post&quot; 更多信息：Writing 运行 hexo 服务1$ hexo server 更多信息：Server 生成静态文件1$ hexo generate 更多信息: Generate 发布到GitHub服务器上1$ hexo depl">
+<meta name="twitter:title" content="login">
+<meta name="twitter:description" content="微服务下登陆方式 参考 Email: david.borsos@opencredo.com  SSO 单点登陆角色：客户端、app服务器、认证服务器流程：  1、客户端请求 2、app服务器检查local用户状态，没有登陆，重定向到认证服务器 3、用户到认证服务器登陆，登陆成功返回token 4、用户使用token重新发起请求 5、app服务器向认证服务器校验token并请求user detail">
+<meta name="twitter:image" content="https://kunwangv.github.io/2017/08/18/login/images/login-methods.png">
 
 
 
@@ -140,13 +143,13 @@
 
 
 
-  <link rel="canonical" href="https://kunwangv.github.io/2017/08/11/hello-kosam/"/>
+  <link rel="canonical" href="https://kunwangv.github.io/2017/08/18/login/"/>
 
 
 
 
 
-  <title>Hexo 快速开始 | Kun Wang</title>
+  <title>login | Kun Wang</title>
   
 
 
@@ -206,7 +209,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -216,7 +219,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Kategorien
+            Categories
           </a>
         </li>
       
@@ -226,7 +229,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            Über
+            About
           </a>
         </li>
       
@@ -236,7 +239,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -293,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://kunwangv.github.io/2017/08/11/hello-kosam/">
+    <link itemprop="mainEntityOfPage" href="https://kunwangv.github.io/2017/08/18/login/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Kun Wang">
@@ -310,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo 快速开始</h1>
+          <h1 class="post-title" itemprop="name headline">login</h1>
         
 
         <div class="post-meta">
@@ -320,10 +323,10 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-11T12:53:35+08:00">
-                2017-08-11
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T10:55:28+08:00">
+                2017-08-18
               </time>
             
 
@@ -360,30 +363,66 @@
       
 
       
-        <p>Welcome t Hexo! 这是我的第一篇自己写的blog, 希望以后有更多的文章发表到上面来！</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建一篇博文"><a href="#创建一篇博文" class="headerlink" title="创建一篇博文"></a>创建一篇博文</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>更多信息：<a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="运行-hexo-服务"><a href="#运行-hexo-服务" class="headerlink" title="运行 hexo 服务"></a>运行 hexo 服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>更多信息：<a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/generate.html" target="_blank" rel="external">Generate</a></p>
-<h3 id="发布到GitHub服务器上"><a href="#发布到GitHub服务器上" class="headerlink" title="发布到GitHub服务器上"></a>发布到GitHub服务器上</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>更多信息：<a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h3 id="第一节"><a href="#第一节" class="headerlink" title="第一节"></a>第一节</h3><p>啦啦啦啦…..</p>
-<h3 id="第二节"><a href="#第二节" class="headerlink" title="第二节"></a>第二节</h3><p>巴拉巴拉巴拉拉巴勒….</p>
-<pre><code>protected Object getTargetRepository(RepositoryMetadata metadata) {
-    Class&lt;?&gt; repositoryInterface = metadata.getRepositoryInterface();
+        <h1 id="微服务下登陆方式"><a href="#微服务下登陆方式" class="headerlink" title="微服务下登陆方式"></a>微服务下登陆方式</h1><blockquote>
+<p>参考 Email: david.borsos@opencredo.com</p>
+</blockquote>
+<h2 id="SSO-单点登陆"><a href="#SSO-单点登陆" class="headerlink" title="SSO 单点登陆"></a>SSO 单点登陆</h2><p>角色：客户端、app服务器、认证服务器<br>流程：</p>
+<ul>
+<li>1、客户端请求</li>
+<li>2、app服务器检查local用户状态，没有登陆，重定向到认证服务器</li>
+<li>3、用户到认证服务器登陆，登陆成功返回token</li>
+<li>4、用户使用token重新发起请求</li>
+<li>5、app服务器向认证服务器校验token并请求user details.</li>
+</ul>
+<p>问题：</p>
+<ul>
+<li>用户登陆不透明</li>
+<li>SSO服务器单点故障</li>
+<li>内部流量爆炸</li>
+<li>每个交换机都需要SSO</li>
+</ul>
+<h2 id="分布式会话"><a href="#分布式会话" class="headerlink" title="分布式会话"></a>分布式会话</h2><p>角色：client,server,Authentication server，分布式会话中心<br>配置环境：微服务和认证服务器都需要连接到分布式的存储中心<br>流程：</p>
+<ul>
+<li>1、用户请求</li>
+<li>2、server发现没有登录，重定向到Auth Server</li>
+<li>3、用户登录，a、把用户登录状态写入session store；b、设置session id 返回client</li>
+<li>4、用户使用session id登录</li>
+<li>5、server根据session id从 session store读取更新登录状态</li>
+</ul>
+<h2 id="客户端-token"><a href="#客户端-token" class="headerlink" title="客户端 token"></a>客户端 token</h2><p>角色：client, server, auth server<br>流程：</p>
+<ul>
+<li>1、client 请求 server</li>
+<li>2、server 发现没登陆重定向到 auth server</li>
+<li>3、client 在auth server登录，获取token</li>
+<li>4、client使用token请求server，server不跟auth server进行交互，server能自己解析token，能够校验token</li>
+</ul>
+<h3 id="token-可以采用JWT的格式"><a href="#token-可以采用JWT的格式" class="headerlink" title="token 可以采用JWT的格式"></a>token 可以采用JWT的格式</h3><h4 id="JWT分为三段"><a href="#JWT分为三段" class="headerlink" title="JWT分为三段"></a>JWT分为三段</h4><ul>
+<li>heaer</li>
+<li>body</li>
+<li>signature</li>
+</ul>
+<h4 id="JWT的特点"><a href="#JWT的特点" class="headerlink" title="JWT的特点"></a>JWT的特点</h4><ul>
+<li>标准</li>
+<li>简单</li>
+<li>可扩展</li>
+<li>支持各种签名（SHA、RSA）</li>
+<li>lib支持好</li>
+<li>支持对称加密，公钥、私钥加密;</li>
+</ul>
+<h2 id="客户端-toke-API网关"><a href="#客户端-toke-API网关" class="headerlink" title="客户端 toke+API网关"></a>客户端 toke+API网关</h2><p>角色：client、api gateway、token store、server、auth server</p>
+<p>流程：</p>
+<ul>
+<li>1、client 请求</li>
+<li>2、没有认证转发的到 auth server</li>
+<li>3、认证成功，返回token</li>
+<li>4、网关转换token=&gt;opaque</li>
+<li>5、client 使用opaque token</li>
+<li>6、网关转换opaque token=&gt;token</li>
+<li>7、server解析token</li>
+</ul>
+<p>登出：<br>撤销在网关处的token</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="/2017/08/18/login/images/login-methods.png" alt=""></p>
 
-    if (isBaseRepository(repositoryInterface)) {
-
-        JpaEntityInformation&lt;M, ID&gt; entityInformation = getEntityInformation((Class&lt;M&gt;) metadata.getDomainType());
-        BaseRepositoryImpl repository = new BaseRepositoryImpl&lt;M, ID&gt;(entityInformation, entityManager);
-
-        return repository;
-    }
-    return super.getTargetRepository(metadata);
-}
-</code></pre>
       
     </div>
     
@@ -398,6 +437,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/login/" rel="tag"># login</a>
+          
+        </div>
+      
 
       
       
@@ -407,15 +452,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/08/17/nginx/" rel="next" title="nginx">
+                <i class="fa fa-chevron-left"></i> nginx
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/11/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -469,10 +514,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -492,14 +537,23 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
 
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">tags</span>
+              
+            </div>
           
 
         </nav>
@@ -531,7 +585,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#快速开始"><span class="nav-number">1.</span> <span class="nav-text">快速开始</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建一篇博文"><span class="nav-number">1.1.</span> <span class="nav-text">创建一篇博文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行-hexo-服务"><span class="nav-number">1.2.</span> <span class="nav-text">运行 hexo 服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成静态文件"><span class="nav-number">1.3.</span> <span class="nav-text">生成静态文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布到GitHub服务器上"><span class="nav-number">1.4.</span> <span class="nav-text">发布到GitHub服务器上</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二章"><span class="nav-number">2.</span> <span class="nav-text">第二章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一节"><span class="nav-number">2.1.</span> <span class="nav-text">第一节</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二节"><span class="nav-number">2.2.</span> <span class="nav-text">第二节</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#微服务下登陆方式"><span class="nav-number">1.</span> <span class="nav-text">微服务下登陆方式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SSO-单点登陆"><span class="nav-number">1.1.</span> <span class="nav-text">SSO 单点登陆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分布式会话"><span class="nav-number">1.2.</span> <span class="nav-text">分布式会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#客户端-token"><span class="nav-number">1.3.</span> <span class="nav-text">客户端 token</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#token-可以采用JWT的格式"><span class="nav-number">1.3.1.</span> <span class="nav-text">token 可以采用JWT的格式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#JWT分为三段"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">JWT分为三段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#JWT的特点"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">JWT的特点</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#客户端-toke-API网关"><span class="nav-number">1.4.</span> <span class="nav-text">客户端 toke+API网关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">1.5.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -563,7 +617,7 @@
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
